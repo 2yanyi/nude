@@ -3,18 +3,15 @@
 
 原项目地址 https://github.com/koyachi/go-nude
 
-### start
+## start
 
-```
-go get -v github.com/xzyan/nude
-```
 ```go
 package main
 
 import "github.com/xzyan/nude"
 
 func main() {
+    data, _ := ioutil.ReadFile("demo.png")
     has, e := nude.IsImageNude(&data)
 }
-
 ```

@@ -29,24 +29,6 @@ func isImageNude(img image.Image) (bool, error) {
 	return d.Parse()
 }
 
-//func IsNude(imageFilePath string) (bool, error) {
-//	return IsFileNude(imageFilePath)
-//}
-//
-//func IsFileNude(imageFilePath string) (bool, error) {
-//	path, err := filepath.Abs(imageFilePath)
-//	if err != nil {
-//		return false, err
-//	}
-//
-//	img, err := decodeImage(path)
-//	if err != nil {
-//		return false, err
-//	}
-//
-//	return isImageNude(img)
-//}
-
 type Detector struct {
 	image           image.Image
 	width           int
